@@ -94,7 +94,7 @@ if (${FEATURE_TOGGLE_GENERATE})
   set(_file_contents "${_file_contents}#define ${UTARGET}_CONFIG_H\n\n")
 
   foreach (_variable_name ${FEATURE_TOGGLES_LIST})
-    if ("${_variable_name}" STREQUAL "ON")
+    if (${_variable_name} STREQUAL "ON")
       set(_file_contents "${_file_contents}#define ${_variable_name} 1\n")
     elseif (${_variable_name})
       set(_file_contents "${_file_contents}#define ${_variable_name} ${${_variable_name}}\n")
