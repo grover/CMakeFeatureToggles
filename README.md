@@ -96,4 +96,14 @@ can be configured via any of the cmake tools.
 
 The example project is also in this repository.
 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md][2] file for details.
+
+## Acknowledgments
+
+Inspired by the [WebKit implementation of CMake feature toggles][3].
+
 [1]: https://cmake.org/
+[2]: LICENSE.md
+[3]: https://trac.webkit.org/browser/trunk/Source/cmake/WebKitFeatures.cmake
